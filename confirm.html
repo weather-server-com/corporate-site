@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>weather-server.com - お問い合わせ</title>
+    <style>
+      .imgbg {
+        height: 800px;
+        background-image: url(images/img_bg.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* スマホ */
+        @media (max-width: 425px) {
+        .imgbg {
+          height: 800px;
+        }
+      }
+
+      .ruby {
+        font-size: medium;
+      }
+     </style>
+  </head>
+
+  <body>
+    <div class="container-fluid border-bottom border-wsdc-ocean border-40">
+    <!-- ヘッダー -->
+    <header class="py-2">
+    <!-- ナビゲーション -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/wsdc_logo.svg" width="180" height="34" alt="weather-server.com"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーション切替">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+          <div class="offcanvas-header text-end">
+            <h5 class="offcanvas-title text-secondary" id="navbarNavLabel">weather-server.com</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <ul class="navbar-nav text-center">
+                <li class="nav-item active">
+                  <a class="nav-link link-secondary" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link link-secondary" href="index.html#company">Company</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link link-secondary" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    </div>
+    <!-- メイン -->
+  <main>
+    <div class="container my-6 my-lg-8">
+      <!-- コンテンツ（お問い合わせ） -->
+      <div class="pb-5">
+        <h3 class="border-bottom pb-2">お問い合わせ</h3>
+        <p class="fw-bold text-center pt-3">入力内容をご確認ください。</p>
+      </div>
+      <div>
+
+        <!-- 確認画面 -->
+        <table class="table">
+            <tr class="">
+                <td class="w-25 text-center p-3">お名前</td>
+                <td class="w-75 p-3">気象　太郎</td>
+            </tr>
+            <tr>
+                <td class="text-center p-3">会社名</td>
+                <td class="p-3">気象サービス</td>
+            </tr>
+            <tr>
+                <td class="text-center p-3">メールアドレス</td>
+                <td class="p-3">urushibara@weather-service.co.jp</td>
+            </tr>
+            <tr>
+                <td class="text-center p-3">電話番号</td>
+                <td class="p-3">0359992727</td>
+            </tr>
+            <tr>
+                <td class="text-center p-3">件名</td>
+                <td class="p-3">寒中お見舞い</td>
+            </tr>
+            <tr>
+                <td class="text-center p-3">お問い合わせ内容</td>
+                <td class="p-3">真夏の暑い時期や真冬の寒い時期に先方への健康の気遣いと、感謝の気持ちを込めた文章が暑中お見舞いや寒中お見舞いです。元来はそれぞれの時期に日頃お世話になっている方々を直接訪問し、挨拶していましたが、多くの会社取引することが多くなった現代では書状をもってご挨拶をすることが一般的になっています。社交辞令という側面もありますが、気候が厳しい時期に挨拶状を送るのと送らないのでは、先方が受ける印象も変わってくるはずです。</td>
+            </tr>
+        </table>
+
+        <!-- 送信ボタン -->
+        <div class="row justify-content-end py-3">
+          <div class="col-md-9 text-center">
+            <button type="submit" class="btn btn-wsdc-ocean text-white mx-2">修　正</button>
+            <button type="submit" class="btn btn-wsdc-ocean text-white mx-2">送信する</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+      <!-- フッター -->
+      
+      <footer class="py-4 align-self-end">
+      <div class="container-fluid bg-wsdc-ocean">
+        <nav>
+          <ul class="nav justify-content-center fs-7 py-1">
+            <li class="nav-item active">
+              <a class="nav-link link-light" href="index.html">ホーム</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link link-light" href="contact.html">お問い合わせ</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link link-light" href="policy.html">プライバシーポリシー</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="py-3 text-center text-secondary">
+        <small>&copy; 2024 weather-server.com Inc.</small>
+      </div>
+
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script type="text/JavaScript" src="js/script.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

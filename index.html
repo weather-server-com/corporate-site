@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>weather-server.com</title>
+    <style>
+      .imgbg {
+        height: 800px;
+        background-image: url(images/img_bg.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* スマホ */
+        @media (max-width: 425px) {
+        .imgbg {
+          height: 800px;
+        }
+      }
+
+      .ruby {
+        font-size: medium;
+      }
+     </style>
+  </head>
+
+  <body>
+    <div class="container-fluid imgbg">
+    <!-- ヘッダー -->
+    <header class="py-2">
+    <!-- ナビゲーション -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/wsdc_logo.svg" width="180" height="34" alt="weather-server.com"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーション切替">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+          <div class="offcanvas-header text-end">
+            <h5 class="offcanvas-title text-secondary" id="navbarNavLabel">weather-server.com</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <ul class="navbar-nav text-center">
+                <li class="nav-item active">
+                  <a class="nav-link link-secondary" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link link-secondary" href="index.html#company">Company</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link link-secondary" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- メインビジュアル -->
+      <div class="container">
+        <div class="row py-4" style="height: 700px;">
+          <div class="col-lg offset-lg"></div>
+          <div class="col-lg text-white align-self-end">
+            <div class="fs-2 fw-bold">weather-server.comについて</div>
+            <h5>weather-server.com は気象データの利用を主としてシステム連携のための基盤機能を提供するサービスです。
+              サービスはサブスクリプション形式でオンラインサインアップでアカウントを作成することですぐにご利用を開始できます。</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- メイン -->
+  <main>
+    <div class="container-fluid bg-wsdc-ocean text-white">
+      <!-- コンテンツ1（事業内容） -->
+      <div class="container">
+      <div class="row py-7 gap-5 gap-lg-3">
+        <div class="col-lg">
+          <h4 class="text-center mb-4 lh-1">データ配信<br><span class="ruby">DELIVERY</span></h4>
+          <p class="px-4">データ配信サービスでは、ご利用になるデータ種別ごとにサブスクリプション登録できます。サブスクリプションの変更は随時可能で、開発用途など一時的なご利用にも適しています。また配信状況を閲覧するダッシュボード、監視用途のシステムメトリクスAPIを提供するので、お客様サイドでのシステム対応などで省力化を実現可能です。</p>
+        </div>
+        <div class="col-lg">
+          <h4 class="text-center mb-4 lh-1">プラットフォームサービス<br><span class="ruby">PLATFORM</span></h4>
+          <p class="px-4">サービス上にテナントを作成し、気象データ配信で提供するダッシュボードやメトリクスAPIなどを他のユーザと共有する管理機能をご利用いただけます。SIer様などのご利用でエンドユーザ様とシステム稼働状況を共有することが可能となります。</p>
+        </div>
+        <div class="col-lg">
+          <h4 class="text-center mb-4 lh-1">コンサルテーション<br><span class="ruby">CONSULTATION</span></h4>
+          <p class="px-4">データ配信を行う事業者向けにプラットフォームサービスのシステム基盤を提供します。弊サービス上にて配信を行う形式のほか、別サイトを立ち上げて独自に運用する形での運用についても対応いたします。システム導入や効果的なメトリクス設計などのコンサルティングをご利用いただけます。</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="company" class="container my-8">
+      <!-- コンテンツ2（会社概要） -->
+      <div class="row">
+        <h3 class="border-bottom pb-2">会社概要</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg">
+          <table class="table">
+            <tbody>
+            <tr">
+              <th class="w-25 text-center p-md-3">会社名</th>
+              <td class="w-75 p-md-3">株式会社 weather-server.com</td>
+            </tr>
+            <tr>
+              <th class="text-center align-middle p-md-3">所在地</th>
+              <td class="p-md-3">東京都練馬区桜台1-20-4<br>TEL.03-5999-2727</td>
+            </tr>
+            <tr>
+              <th class="text-center p-md-3">代表者名</th>
+              <td class="p-md-3">稲村　善平</td>
+            </tr>
+            <tr>
+              <th class="text-center p-md-3">資本金</th>
+              <td class="p-md-3">300万円</td>
+            </tr>
+            <tr>
+              <th class="text-center align-middle p-md-3">役　員</th>
+              <td class="p-md-3">代表取締役　　稲村　善平<br>取　締　役　　池田　徹</td>
+            </tr>
+            <tr>
+              <th class="text-center align-middle p-md-3">事業内容</th>
+              <td class="p-md-3">
+                <ul>
+                  <li>気象に関するデータ配信</li>
+                  <li>データ配信を行うプラットフォームサービス</li>
+                  <li>情報提供システムの構築及びコンサルテーションの受託</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="text-center p-md-3">設立年月</th>
+              <td class="p-md-3">令和6年1月16日</td>
+            </tr>
+            </tbody>
+
+          </table>
+        </div>
+        <div class="col-lg p-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.458890095454!2d139.6654778!3d35.7395242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed137fa1e157%3A0x952eeb82d295535!2z44CSMTc2LTAwMDIg5p2x5Lqs6YO957e06aas5Yy65qGc5Y-w77yR5LiB55uu77yS77yQ4oiS77yU!5e0!3m2!1sja!2sjp!4v1709791994001!5m2!1sja!2sjp" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+      <!-- フッター -->
+      
+      <footer class="py-4 align-self-end">
+      <div class="container-fluid bg-wsdc-ocean">
+        <nav>
+          <ul class="nav justify-content-center fs-7 py-1">
+            <li class="nav-item active">
+              <a class="nav-link link-light" href="index.html">ホーム</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link link-light" href="contact.html">お問い合わせ</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link link-light" href="policy.html">プライバシーポリシー</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="py-3 text-center text-secondary">
+        <small>&copy; 2024 weather-server.com Inc.</small>
+      </div>
+
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script type="text/JavaScript" src="js/script.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

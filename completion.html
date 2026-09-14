@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>weather-server.com - お問い合わせ</title>
+    <style>
+      .imgbg {
+        height: 800px;
+        background-image: url(images/img_bg.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* スマホ */
+        @media (max-width: 425px) {
+        .imgbg {
+          height: 800px;
+        }
+      }
+
+      .ruby {
+        font-size: medium;
+      }
+     </style>
+  </head>
+
+  <body>
+    <div class="container-fluid border-bottom border-wsdc-ocean border-40">
+    <!-- ヘッダー -->
+    <header class="py-2">
+    <!-- ナビゲーション -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/wsdc_logo.svg" width="180" height="34" alt="weather-server.com"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーション切替">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+          <div class="offcanvas-header text-end">
+            <h5 class="offcanvas-title text-secondary" id="navbarNavLabel">weather-server.com</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <ul class="navbar-nav text-center">
+                <li class="nav-item active">
+                  <a class="nav-link link-secondary" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link link-secondary" href="index.html#company">Company</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link link-secondary" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    </div>
+    <!-- メイン -->
+  <main>
+    <div class="container my-6 my-lg-8">
+      <!-- コンテンツ（お問い合わせ） -->
+      <div class="pb-5">
+        <h3 class="border-bottom pb-2">お問い合わせ</h3>
+      </div>
+       <!-- ブロック（送信完了） -->
+      <div>
+        <p class="fs-3 fw-bold text-center pt-3">送信が完了しました</p>
+        <p class="text-center fw-bold">ご送信頂きまして誠にありがとうございます。<br>担当者よりご案内させていただきます。</p>
+        <ul class="fs-7">
+            <li>お客様の個人情報につきましては、弊社で責任をもって管理し、お客様へのご回答にのみ使用させていただきます。第三者への開示や他の目的での使用はいたしません。弊社における個人情報の取り扱い方針につきましては、<a href="#" class="link-secondary">プライバシーポリシー</a>をご参照ください。</li>
+            <li>土日・祝日を挟んだ場合、およびご質問内容によっては、ご回答までに日数がかかる場合がございます。予めご了承ください。</li>
+        </ul>
+      </div>
+      <div class="border-bottom py-7 mb-3">
+        <!-- 戻るボタン -->
+        <div class="row justify-content-end py-3">
+          <div class="col text-center">
+            <button type="submit" class="btn btn-wsdc-ocean text-white mx-2">戻　る</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+      <!-- フッター -->
+      
+      <footer class="py-4 align-self-end">
+      <div class="container-fluid bg-wsdc-ocean">
+        <nav>
+            <ul class="nav justify-content-center fs-7 py-1">
+              <li class="nav-item active">
+                <a class="nav-link link-light" href="index.html">ホーム</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link link-light" href="contact.html">お問い合わせ</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link link-light" href="policy.html">プライバシーポリシー</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+      <div class="py-3 text-center text-secondary">
+        <small>&copy; 2024 weather-server.com Inc.</small>
+      </div>
+
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script type="text/JavaScript" src="js/script.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
